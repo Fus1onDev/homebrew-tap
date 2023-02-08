@@ -5,10 +5,12 @@ class Genelic < Formula
   sha256 "91c52b979ba5438f136936e90b829c6eff9e6014f2c7f0de9ffe8776c8996d74"
   license "MIT"
 
-  depends_on "deno"
+  depends_on "deno" => :build
 
   def install
-    system "deno", "compile", "--allow-read", "--allow-write", "--allow-env", "--unstable", "--output=genelic", "mod.ts"
+    system "deno", "compile", "--allow-read", "--allow-write", "--allow-env", "--unstable", \
+      "--output=genelic", "mod.ts"
+
     bin.install "genelic"
   end
 
