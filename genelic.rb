@@ -5,7 +5,7 @@ class Genelic < Formula
   sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
   license "MIT"
 
-  depends_on: "deno"
+  depends_on "deno"
 
   def install
     system "deno", "compile", "--allow-read", "--allow-write", "--allow-env", "--unstable", "--output=genelic", "mod.ts"
