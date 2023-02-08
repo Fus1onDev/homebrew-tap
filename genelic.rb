@@ -8,8 +8,7 @@ class Genelic < Formula
   depends_on "deno" => :build
 
   def install
-    system "deno", "compile", "--allow-read", "--allow-write", "--allow-env", "--unstable", \
-      "--output=genelic", "mod.ts"
+    system "deno", "compile", "--allow-read", "--allow-write", "--allow-env", "--output=genelic", "mod.ts"
 
     bin.install "genelic"
   end
