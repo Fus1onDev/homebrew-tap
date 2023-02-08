@@ -6,7 +6,7 @@ tag=$1
 echo "Tag: '${tag}'"
 filename="${tag}.tar.gz"
 echo "Filename: '${filename}'"
-curl -LOk "https://github.com/Fus1onDev/Alticns/archive/${filename}"
+curl -LOk "https://github.com/Fus1onDev/genelic/archive/${filename}"
 result=$(shasum -a 256 $filename)
 echo "Result: '${result}'"
 sha256=$(echo ${result} | cut -d ' ' -f 1)
