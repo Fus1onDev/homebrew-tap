@@ -1,8 +1,8 @@
 class Genelic < Formula
   desc "⚖️ Generate a license file for your project easily"
   homepage "https://github.com/fus1ondev/genelic#readme"
-  url "https://github.com/fus1ondev/genelic/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "07cd2caf65a6742a428a18ed1d5bed0533a479b1385f2271e7296b469dc07f3f"
+  url "https://github.com/fus1ondev/genelic/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "24ad7f5ad940a25910e813515eb95837f4f0c51e5d5660c4d51d1ef28b6b31ec"
   license "MIT"
 
   depends_on "deno" => :build
