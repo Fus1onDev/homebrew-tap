@@ -1,7 +1,7 @@
 class Genelic < Formula
   desc "⚖️ Generate a license file for your project easily"
   homepage "https://github.com/fus1ondev/genelic#readme"
-  url "https://github.com/fus1ondev/genelic/archive/refs/tags/v1.2.0.tar.gz"
+  url "https://github.com/fus1ondev/genelic/archive/refs/tags/v1.2.1.tar.gz"
   sha256 "a8a5a3ed614c9f59efaa36bda96ea726aef021cbe416985936a4b056a1fb874e"
   license "MIT"
 
