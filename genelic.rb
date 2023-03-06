@@ -2,13 +2,13 @@ class Genelic < Formula
   desc "⚖️ Generate a license file for your project easily"
   homepage "https://github.com/fus1ondev/genelic#readme"
   url "https://github.com/fus1ondev/genelic/archive/refs/tags/v1.2.0.tar.gz"
-  sha256 "fb1d890372be36769ec92d861aecef9e5f923fa848187aac73f77ac68f999fa3"
+  sha256 "a8a5a3ed614c9f59efaa36bda96ea726aef021cbe416985936a4b056a1fb874e"
   license "MIT"
 
   depends_on "deno" => :build
 
   def install
-    system "deno", "compile", "--allow-read", "--allow-write", "--allow-env", "--allow-sys", "--no-lock", "--output=genelic", "mod.ts"
+    system "deno", "compile", "--allow-read", "--allow-write", "--allow-env", "--allow-sys", "--allow-net", "--allow-run", "--no-lock", "--output=genelic", "mod.ts"
 
     bin.install "genelic"
   end
